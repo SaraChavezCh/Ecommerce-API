@@ -4,7 +4,7 @@ const transporter = require("../utils/mailer");
 const purchase = async (req, res, next) =>{
     try {
         const {userId} = req.params
-        //const {status} = req.body
+      
 
         const data = Number(userId)
 

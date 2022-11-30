@@ -3,13 +3,13 @@ const { CartServices } = require("../services")
 
 const addToCart = async (req, res, next) =>{
     try {
-        //const product = req.body
+      
         const {userId} = req.params
         const {productId, quantity} = req.body
         const product = {userId: Number(userId), productId, quantity}
 
         const result = await CartServices.addProductToCart(product, res)
-        //console.log("ESTO ES RESULT", result);
+       
 
         res.json(result)
     } catch (error) {

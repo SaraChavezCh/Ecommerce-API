@@ -4,7 +4,7 @@ const transporter  = require("../utils/mailer");
 const userRegister = async (req, res, next) => {
   try {
     const newUser = req.body;
-    console.log(newUser);
+
     const result = await UserServices.create(newUser);
 
     res.status(201).json(result);

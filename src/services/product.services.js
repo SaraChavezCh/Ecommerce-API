@@ -33,7 +33,7 @@ class ProductServices{
     static async create (data){
         try {
             const newProduct = await Product.create(data);
-            // newProduct.userId = token.id  tomar el user Id del token seria lo ideal
+            
             return newProduct
         } catch (error) {
             throw error

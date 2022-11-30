@@ -20,7 +20,7 @@ class CartServices {
                 res.status(400).json({error: "product does not exist"})
             }
 
-            //console.log("ESTO ES PRODUCT DATA", productData);
+        
             
 
 
@@ -47,7 +47,7 @@ class CartServices {
                     
                 },
             })
-            console.log(cart);
+           
             return cart
         } catch (error) {
             throw error

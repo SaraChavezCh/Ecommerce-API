@@ -20,7 +20,7 @@ class PurchaseServices {
       });
 
       if (getCartData.productInCarts.length != 0) {
-        console.log("GET CARTDATA", getCartData.productInCarts);
+      
         const productList = getCartData.productInCarts;
 
         const newList = productList.map((product) => {

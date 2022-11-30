@@ -4,7 +4,7 @@ class UserServices{
     static async create (newUser){
         try {
             const result = await User.create(newUser);
-            console.log(result.id)
+            
             const createCart = await Cart.create( {
                 totalPrice: 0,
                 userId: result.id,
